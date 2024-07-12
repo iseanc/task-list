@@ -77,3 +77,24 @@ body {
   margin-top: 0px;
   justify-content: space-between;
 }
+
+/* chained class selector */
+.tasks.overflow {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+/* pseudo element, to style task list scroll bar */
+.tasks::-webkit-scrollbar {
+  width: 10px;
+}
+
+.tasks::-webkit-scrollbar-track {
+  background: #BAE6FF;
+  border-radius: 25px;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+  background: #0D75EC;
+  border-radius: 25px;
+}
